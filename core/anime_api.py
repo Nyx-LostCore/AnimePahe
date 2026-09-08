@@ -18,3 +18,5 @@ def get_episodes(anime_session):
         return response.json().get("data", [])
     return []
 
+def get_episode_list(anime_session):
+    return get_episodes(anime_session)
